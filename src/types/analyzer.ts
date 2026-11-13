@@ -58,3 +58,4 @@ export interface PasswordAnalysisResult {
   commonRank?: number;
   analyzedAt: number;
 }
+

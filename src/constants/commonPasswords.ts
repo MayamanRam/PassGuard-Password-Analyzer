@@ -114,3 +114,4 @@ export function checkCommonPassword(candidate: string): CommonPasswordMatch {
 
   return { isCommon: false };
 }
+

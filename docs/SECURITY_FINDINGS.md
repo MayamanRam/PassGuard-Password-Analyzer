@@ -20,3 +20,4 @@
 - **Vulnerability:** When a user pasted an unusually large string (e.g. 2,000+ characters of repetitive tokens), the combinatorial shortest-path search in `@zxcvbn-ts/core` analyzed every combination of repeated substrings, taking $> 2.5$ seconds and stalling the UI thread.
 - **Remediation:** In `passwordAnalyzer.ts`, inputs longer than 72 characters are truncated specifically for the zxcvbn graph evaluation (`passwordForZxcvbn = password.substring(0, 72)`). 72 characters of mixed characters provides $> 400$ bits of entropy, which already saturates maximum possible cracking resistance. The full string is still evaluated for character composition and length metrics.
 - **Verification:** Unit test `handles massive 2,000+ character input safely without freezing or crashing` verified execution in $< 1,000$ms.
+

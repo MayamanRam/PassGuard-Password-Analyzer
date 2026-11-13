@@ -20,3 +20,4 @@ export interface GeneratedPassphraseItem {
   entropyBits: number;
   crackTimeEstimate: string;
 }
+

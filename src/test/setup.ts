@@ -6,3 +6,4 @@ if (typeof globalThis.crypto === 'undefined' || !globalThis.crypto.subtle) {
   // @ts-expect-error type polyfill for jsdom
   globalThis.crypto = nodeCrypto.webcrypto;
 }
+

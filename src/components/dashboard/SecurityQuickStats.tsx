@@ -74,3 +74,4 @@ export const SecurityQuickStats: React.FC = () => {
     </div>
   );
 };
+

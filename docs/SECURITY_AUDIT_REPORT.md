@@ -57,3 +57,4 @@ found 0 vulnerabilities
 ## 5. Audit Conclusion & Portfolio Suitability
 
 PassGuard meets all stated security and privacy engineering requirements. The application is suitable for demonstration in a senior developer and cybersecurity portfolio.
+

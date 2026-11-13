@@ -72,3 +72,4 @@ export const BatchPasswordList: React.FC<BatchPasswordListProps> = ({ passwords 
     </div>
   );
 };
+

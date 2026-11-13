@@ -17,3 +17,4 @@ export type ActiveTab =
   | 'passphrase'
   | 'guide'
   | 'about';
+

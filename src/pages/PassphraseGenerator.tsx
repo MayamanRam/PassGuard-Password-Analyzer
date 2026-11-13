@@ -67,3 +67,4 @@ export const PassphraseGenerator: React.FC = () => {
     </div>
   );
 };
+

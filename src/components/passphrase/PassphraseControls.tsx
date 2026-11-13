@@ -201,3 +201,4 @@ export const PassphraseControls: React.FC<PassphraseControlsProps> = ({
     </div>
   );
 };
+

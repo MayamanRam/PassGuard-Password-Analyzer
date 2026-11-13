@@ -64,3 +64,4 @@ describe('PassphraseGenerator - EFF Diceware Passphrases', () => {
     expect(unique.size).toBe(5);
   });
 });
+

@@ -141,3 +141,4 @@ export const BreachCheckCard: React.FC<BreachCheckCardProps> = ({ password }) =>
     </div>
   );
 };
+

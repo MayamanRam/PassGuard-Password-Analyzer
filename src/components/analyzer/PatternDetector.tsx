@@ -92,3 +92,4 @@ export const PatternDetector: React.FC<PatternDetectorProps> = ({ patterns, pass
     </div>
   );
 };
+

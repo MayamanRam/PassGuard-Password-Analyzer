@@ -50,3 +50,4 @@ Referrer-Policy: no-referrer
 Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()
 Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 ```
+

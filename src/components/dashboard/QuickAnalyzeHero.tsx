@@ -130,3 +130,4 @@ export const QuickAnalyzeHero: React.FC<QuickAnalyzeHeroProps> = ({ onNavigate }
     </div>
   );
 };
+

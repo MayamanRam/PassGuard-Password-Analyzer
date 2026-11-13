@@ -258,3 +258,4 @@ export function calculatePassphraseTheoreticalEntropy(
 
   return Number(totalEntropy.toFixed(2));
 }
+

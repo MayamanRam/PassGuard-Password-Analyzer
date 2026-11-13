@@ -72,3 +72,4 @@ PassGuard's automated test suite was executed via `npm test` (`vitest run`):
 10. **k-Anonymity Transmission:** Verified that `fetch()` sends only 5-character prefixes and never transmits plaintext passwords or 40-character hashes.
 11. **Component Accessibility:** Verified `role="progressbar"`, `aria-valuenow`, `aria-valuemin="0"`, `aria-valuemax="4"`, and `aria-valuetext`.
 12. **Clipboard Interaction:** Verified `navigator.clipboard.writeText` triggers on explicit user button click with visual feedback.
+

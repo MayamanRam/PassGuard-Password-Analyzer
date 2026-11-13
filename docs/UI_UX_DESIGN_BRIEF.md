@@ -60,3 +60,4 @@ Section 6 and WCAG guideline 1.4.1 dictate that color must never be the sole con
 - **Desktop (1024px+):** Multi-column dashboard layouts with side-by-side controls and output panes.
 - **Tablet (768px – 1023px):** Fluid two-column grids adapting gracefully to touch targets.
 - **Mobile (< 768px):** Single-column stacked layouts, expandable hamburger navigation, and full-width touch-friendly sliders and copy buttons.
+

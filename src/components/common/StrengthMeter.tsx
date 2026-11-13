@@ -116,3 +116,4 @@ export const StrengthMeter: React.FC<StrengthMeterProps> = ({
     </div>
   );
 };
+

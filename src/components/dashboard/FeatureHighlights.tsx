@@ -96,3 +96,4 @@ export const FeatureHighlights: React.FC<FeatureHighlightsProps> = ({ onNavigate
     </div>
   );
 };
+

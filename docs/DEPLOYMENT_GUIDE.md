@@ -1,4 +1,5 @@
 # Deployment Guide (DEPLOYMENT_GUIDE.md)
+
 ## PassGuard — Production Build, Static Hosting & Security Headers
 
 ---
@@ -8,22 +9,27 @@
 PassGuard compiles to an optimized, static client-side single page application:
 
 ### Step 1: Clean Dependency Installation
+
 ```bash
 cd 02-PassGuard-Password-Analyzer
 npm install
 ```
 
 ### Step 2: Run Automated Tests & Type Checking
+
 ```bash
 npm test
 npx tsc --noEmit
 ```
 
 ### Step 3: Compile Production Assets
+
 ```bash
 npm run build
 ```
+
 This command compiles TypeScript via `tsc` and outputs minified static assets to the `dist/` directory:
+
 - `dist/index.html` (Entry HTML document with security meta tags)
 - `dist/assets/index-[hash].css` (Tailwind compiled stylesheet)
 - `dist/assets/index-[hash].js` (Minified JavaScript bundle including offline dictionaries)
@@ -36,6 +42,7 @@ This command compiles TypeScript via `tsc` and outputs minified static assets to
 PassGuard requires no server runtime or database; it can be hosted on any static site provider or web server.
 
 ### 2.1 Option A: Nginx Web Server Configuration
+
 Create an Nginx server block with strict HTTP security headers:
 
 ```nginx
@@ -75,6 +82,7 @@ server {
 ```
 
 ### 2.2 Option B: Cloudflare Pages / Netlify / Vercel
+
 Create a `public/_headers` file for Netlify / Cloudflare Pages:
 
 ```http

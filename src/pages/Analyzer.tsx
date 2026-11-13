@@ -117,3 +117,4 @@ export const Analyzer: React.FC = () => {
     </div>
   );
 };
+

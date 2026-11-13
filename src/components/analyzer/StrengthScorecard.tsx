@@ -110,3 +110,4 @@ export const StrengthScorecard: React.FC<StrengthScorecardProps> = ({ analysis }
     </div>
   );
 };
+

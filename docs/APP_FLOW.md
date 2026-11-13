@@ -1,4 +1,5 @@
 # Application Flow (APP_FLOW.md)
+
 ## PassGuard — User Journeys & State Transitions
 
 ---
@@ -36,6 +37,7 @@ stateDiagram-v2
 ## 2. Key User Journeys
 
 ### 2.1 Journey 1: Evaluating a Personal Password for Vulnerabilities
+
 1. User lands on **Dashboard** or clicks **Password Analyzer**.
 2. User types or pastes their target password into the `PasswordInput` field.
 3. As keystrokes occur, `analyzePassword()` calculates:
@@ -51,6 +53,7 @@ stateDiagram-v2
 5. User clicks **Clear**: All inputs and derived results are instantly wiped from client memory.
 
 ### 2.2 Journey 2: Generating a Cryptographically Secure Password
+
 1. User navigates to **Password Generator**.
 2. User selects length (e.g., 24 characters) and checks desired character sets.
 3. User toggles "Exclude Ambiguous" (`0, O, 1, l, I`) to prevent reading errors.
@@ -62,6 +65,7 @@ stateDiagram-v2
    - User pastes into their local password manager.
 
 ### 2.3 Journey 3: Generating a Human-Memorable Diceware Passphrase
+
 1. User navigates to **Passphrase Generator**.
 2. User selects 4 to 6 words using the slider.
 3. User chooses separator (`-`, `.`, `_`, space, or random) and capitalization (`TitleCase`).
@@ -70,6 +74,7 @@ stateDiagram-v2
 6. User copies the passphrase for use as a master password or full-disk encryption key.
 
 ### 2.4 Journey 4: Exploring the Security Guide
+
 1. User navigates to **Security Guide**.
 2. User filters topics by category ("All", "Attack Vectors", "Defenses & Hygiene", "MFA & Passkeys") or types in search bar.
 3. User expands accordion items to read beginner-friendly yet technically rigorous breakdowns of Hashcat rules, credential stuffing pipelines, password spraying, and FIDO2 passkeys.

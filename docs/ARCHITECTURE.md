@@ -1,4 +1,5 @@
 # Architecture Document
+
 ## PassGuard — Technical Architecture & Component Flow
 
 ---
@@ -73,6 +74,7 @@ flowchart TB
 ## 3. Detailed Data Flow Architecture
 
 ### 3.1 Password Strength Analysis Flow
+
 ```mermaid
 sequenceDiagram
     autonumber
@@ -104,6 +106,7 @@ sequenceDiagram
 ```
 
 ### 3.2 k-Anonymity Breach Verification Flow
+
 ```mermaid
 sequenceDiagram
     autonumber
@@ -134,15 +137,18 @@ sequenceDiagram
 ## 4. Subsystem Specifications
 
 ### 4.1 Cryptographic Randomness Subsystem (`cryptoService.ts`)
+
 - Utilizes `window.crypto.getRandomValues(Uint32Array)`.
 - Eliminates modulo bias via rejection sampling loop against the highest multiple of $N$ below $2^{32}$.
 - Implements in-place Fisher-Yates array shuffling with unbiased random index selection.
 
 ### 4.2 Entropy Estimation Subsystem (`entropyService.ts`)
+
 - **Hartley Bound:** Computes $L \log_2(R)$ to represent maximum theoretical search space.
 - **Shannon Entropy:** Computes character frequency distribution to detect character repetition deficits.
 - **Effective Entropy:** Computes $\log_2(\text{guesses})$ based on zxcvbn's graph model of shortest attack paths.
 
 ### 4.3 Breached Password Subsystem (`breachChecker.ts`)
+
 - Implements Cloudflare-backed Have I Been Pwned Range API with `Add-Padding: true` header to prevent network-level side-channel packet size inspection.
 - Enforces a 6,000ms network timeout with `AbortController` and graceful offline fallback.

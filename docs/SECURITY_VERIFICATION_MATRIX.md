@@ -24,3 +24,4 @@ This matrix maps every architectural security requirement and threat mitigation 
 | **SEC-13** | **Common Breached Password Blocklist:** Instant score 0 and warning on top 1,000 common passwords. | `src/constants/commonPasswords.ts` | `src/test/unit/passwordAnalyzer.test.ts` (Top common list testing) | **Verified (PASS)** |
 | **SEC-14** | **WCAG 2.2 AA Accessible Meter:** Strength progressbar includes text labels, score values, and ARIA attributes. | `src/components/common/StrengthMeter.tsx` | `src/test/components/components.test.tsx` (`getByRole('progressbar')`) | **Verified (PASS)** |
 | **SEC-15** | **Explicit Clipboard Intent:** Clipboard API triggered exclusively on deliberate user click with visual confirmation. | `src/components/common/CopyButton.tsx` | `src/test/components/components.test.tsx` (Clipboard mock verification) | **Verified (PASS)** |
+

@@ -91,3 +91,4 @@ export function formatSecondsToTime(seconds: number): string {
   }
   return `${(years / 1_000_000_000).toFixed(1)} billion years`;
 }
+

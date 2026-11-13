@@ -131,3 +131,4 @@ Samples $r \sim \text{Uint32}$ are rejected if $r \ge \text{limit}$. Returns $r 
    The application registers no `localStorage.setItem` or `sessionStorage.setItem` calls. All states reside in ephemeral React component memory.
 3. **No Dynamic Code Execution:**
    No `eval()`, `new Function()`, or `dangerouslySetInnerHTML` constructs exist in the application codebase.
+

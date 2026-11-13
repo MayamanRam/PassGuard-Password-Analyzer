@@ -119,3 +119,4 @@ export const CrackTimeEstimator: React.FC<CrackTimeEstimatorProps> = ({ crackTim
     </div>
   );
 };
+

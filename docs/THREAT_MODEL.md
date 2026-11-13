@@ -59,3 +59,4 @@ flowchart TD
 1. **Compromised Host Machine:** If the user's operating system is infected with kernel-level keyloggers or memory scrapers, no web application can defend plaintext keystrokes.
 2. **Third-Party Clipboard Managers:** Modern operating systems (Windows 11 clipboard history, macOS pasteboard history) may record copied passwords. PassGuard provides explicit warnings advising users to clear clipboard histories or use direct password manager auto-fill.
 3. **Pwned Passwords API Outages:** If `api.pwnedpasswords.com` is unreachable or blocked by corporate firewalls, the breach checker fails safely and notifies the user while local strength analysis remains 100% operational.
+

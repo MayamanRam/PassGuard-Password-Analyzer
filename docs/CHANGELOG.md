@@ -1,4 +1,5 @@
 # Changelog (CHANGELOG.md)
+
 ## PassGuard — Version & Release History
 
 All notable changes to the PassGuard project are documented in this file.
@@ -10,6 +11,7 @@ All notable changes to the PassGuard project are documented in this file.
 ### Initial Production Release
 
 #### Added
+
 - **Password Strength Analyzer:**
   - Real-time client-side analysis utilizing `@zxcvbn-ts/core` (v4.2.0) with English and common language packs.
   - Dual-entropy calculations: Theoretical Hartley Bound ($L \log_2 R$) vs Shannon Information Entropy vs Effective Realistic Entropy ($\log_2(\text{guesses})$).

@@ -86,3 +86,4 @@ export const ThreatIntelAlerts: React.FC<ThreatIntelAlertsProps> = ({ onNavigate
     </div>
   );
 };
+

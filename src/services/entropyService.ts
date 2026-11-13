@@ -132,3 +132,4 @@ export function calculateEntropy(
     poolSize: composition.poolSize,
   };
 }
+

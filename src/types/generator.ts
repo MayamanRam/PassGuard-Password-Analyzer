@@ -18,3 +18,4 @@ export interface GeneratedPasswordItem {
   label: string;
   createdAt: number;
 }
+

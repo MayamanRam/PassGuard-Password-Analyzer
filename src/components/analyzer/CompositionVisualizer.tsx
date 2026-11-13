@@ -94,3 +94,4 @@ export const CompositionVisualizer: React.FC<CompositionVisualizerProps> = ({ co
     </div>
   );
 };
+
