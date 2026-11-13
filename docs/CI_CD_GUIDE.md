@@ -1,4 +1,5 @@
 # CI/CD Pipeline & GitHub Actions Guide (CI_CD_GUIDE.md)
+
 ## PassGuard — Automated DevSecOps, Continuous Integration & Deployment
 
 ---
@@ -26,6 +27,7 @@ flowchart LR
 The workflow file is located at `.github/workflows/ci.yml` and consists of two sequential jobs:
 
 ### 2.1 Job 1: `test-and-build`
+
 - **Runner:** `ubuntu-latest`
 - **Node.js:** Version 20.x with npm dependency caching.
 - **Tasks Executed:**
@@ -38,6 +40,7 @@ The workflow file is located at `.github/workflows/ci.yml` and consists of two s
   7. `actions/upload-pages-artifact@v3`: Packages `dist/` for GitHub Pages deployment.
 
 ### 2.2 Job 2: `deploy-pages`
+
 - Triggers on successful merge to `main`.
 - Deploys static build artifact directly to GitHub Pages using OpenID Connect (OIDC) tokens without exposing repository secrets.
 
@@ -68,6 +71,7 @@ npx playwright show-report
 ## 4. Enabling GitHub Pages in Your Repository
 
 Once the repository is pushed to GitHub:
+
 1. Navigate to your repository: `https://github.com/<your-username>/02-PassGuard-Password-Analyzer`.
 2. Click **Settings** &rarr; **Pages** (under Code and automation).
 3. Under **Build and deployment** &rarr; **Source**, select **GitHub Actions**.
