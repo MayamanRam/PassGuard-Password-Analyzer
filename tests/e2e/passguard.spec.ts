@@ -20,7 +20,7 @@ test.describe('PassGuard End-to-End Cybersecurity Test Suite', () => {
 
     // Verify reactive strength meter and entropy appear
     await expect(page.getByRole('progressbar')).toBeVisible();
-    await expect(page.getByText(/Effective Entropy/i)).toBeVisible();
+    await expect(page.getByText(/Effective Entropy:/i)).toBeVisible();
   });
 
   test('E2E-02: Real-time Password Analyzer evaluates patterns and entropy', async ({ page }) => {

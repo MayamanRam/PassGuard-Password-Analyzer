@@ -58,9 +58,11 @@ function detectAdditionalPatterns(password: string): PatternMatch[] {
     });
   }
 
-  // 2. Sequential numbers (e.g., 1234, 4321, 7890)
+  // 2. Sequential numbers (e.g., 123, 1234, 4321, 7890)
   const numberSequences = [
-    '0123456789', '9876543210', '123456', '654321', '12345', '54321', '1234', '4321', '2345', '3456', '4567', '5678', '6789'
+    '0123456789', '9876543210', '123456', '654321', '12345', '54321', '1234', '4321',
+    '2345', '3456', '4567', '5678', '6789', '123', '234', '345', '456', '567', '678', '789',
+    '321', '432', '543', '654', '765', '876', '987', '012', '210'
   ];
   const lowerPwd = password.toLowerCase();
   for (const seq of numberSequences) {
@@ -78,8 +80,11 @@ function detectAdditionalPatterns(password: string): PatternMatch[] {
     }
   }
 
-  // 3. Sequential alphabet (e.g., abcd, defg, dcba)
-  const alphabetSequences = ['abcdef', 'bcdefg', 'cdefgh', 'defghi', 'efghij', 'fedcba', 'edcba', 'abcd', 'bcde', 'cdef'];
+  // 3. Sequential alphabet (e.g., abc, abcd, defg, dcba)
+  const alphabetSequences = [
+    'abcdef', 'bcdefg', 'cdefgh', 'defghi', 'efghij', 'fedcba', 'edcba', 'abcd', 'bcde', 'cdef',
+    'abc', 'bcd', 'cde', 'def', 'efg', 'fgh', 'cba', 'dcb', 'edc', 'fed'
+  ];
   for (const seq of alphabetSequences) {
     const idx = lowerPwd.indexOf(seq);
     if (idx !== -1) {
