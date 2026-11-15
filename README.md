@@ -103,6 +103,7 @@ PassGuard operates under a strict **Zero-Knowledge Architecture**:
 │   ├── styles/                 # Tailwind CSS design system
 │   ├── App.tsx                 # Root application controller
 │   └── main.tsx                # Client DOM entrypoint
+├── docs/                       # 19 comprehensive cybersecurity documents
 ├── index.html                  # HTML entrypoint with security meta tags
 ├── package.json                # Dependencies and scripts
 ├── tailwind.config.js          # Cyber dark theme configuration
@@ -122,7 +123,7 @@ PassGuard operates under a strict **Zero-Knowledge Architecture**:
 ### 1. Installation
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/MayamanRam/PassGuard-Password-Analyzer.git
 cd 02-PassGuard-Password-Analyzer
 npm install
 ```
@@ -172,6 +173,32 @@ npm run preview
 | `privacy.test.ts`             | 5           | PASS          | Zero `localStorage` writes, zero `sessionStorage` writes, zero `fetch` calls in analysis, zero `console.log` leaks.                |
 | `components.test.tsx`         | 4           | PASS          | PasswordInput show/hide/clear, StrengthMeter ARIA progressbar, CopyButton clipboard write, full tab navigation.                    |
 | **Total**                     | **48 / 48** | **100% PASS** | **All core features and security controls verified.**                                                                              |
+
+---
+
+## 📚 Technical Documentation
+
+A complete documentation suite (19 engineering documents) is available in the [`docs/`](./docs) directory:
+
+- [PRD.md](./docs/PRD.md) — Product Requirements Document
+- [TRD.md](./docs/TRD.md) — Technical Requirements Document
+- [ARCHITECTURE.md](./docs/ARCHITECTURE.md) — Architecture & Mermaid Diagrams
+- [APP_FLOW.md](./docs/APP_FLOW.md) — Application Flow & State Transitions
+- [UI_UX_DESIGN_BRIEF.md](./docs/UI_UX_DESIGN_BRIEF.md) — Design System & WCAG 2.2 AA Guide
+- [SECURITY_REQUIREMENTS.md](./docs/SECURITY_REQUIREMENTS.md) — NIST SP 800-63B & OWASP Controls
+- [THREAT_MODEL.md](./docs/THREAT_MODEL.md) — STRIDE Threat Analysis
+- [PRIVACY_DESIGN.md](./docs/PRIVACY_DESIGN.md) — k-Anonymity Mathematical Proof & Storage Boundary
+- [PASSWORD_ANALYSIS_METHODOLOGY.md](./docs/PASSWORD_ANALYSIS_METHODOLOGY.md) — Entropy & Threat Models
+- [CRYPTOGRAPHIC_RANDOMNESS.md](./docs/CRYPTOGRAPHIC_RANDOMNESS.md) — Web Crypto CSPRNG & Modulo Bias Proof
+- [TESTING_STRATEGY.md](./docs/TESTING_STRATEGY.md) — QA Architecture & Vitest Report
+- [SECURITY_VERIFICATION_MATRIX.md](./docs/SECURITY_VERIFICATION_MATRIX.md) — Controls to Tests Traceability
+- [IMPLEMENTATION_PLAN.md](./docs/IMPLEMENTATION_PLAN.md) — Milestones & Delivery Record
+- [DEPLOYMENT_GUIDE.md](./docs/DEPLOYMENT_GUIDE.md) — Nginx / Static Hosting & Security Headers
+- [CI_CD_GUIDE.md](./docs/CI_CD_GUIDE.md) — CI/CD Pipeline & GitHub Actions Automation
+- [RISK_REGISTER.md](./docs/RISK_REGISTER.md) — Risk Assessment & Mitigations Log
+- [SECURITY_AUDIT_REPORT.md](./docs/SECURITY_AUDIT_REPORT.md) — Security Audit & Vulnerability Assessment
+- [SECURITY_FINDINGS.md](./docs/SECURITY_FINDINGS.md) — Findings Log & Remediation Notes
+- [CHANGELOG.md](./docs/CHANGELOG.md) — Version History & Release Notes
 
 ---
 
